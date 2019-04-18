@@ -3,15 +3,16 @@
 #include <stdio.h>
 #include "screen.h"
 
+
 void barChart(int db[]){
-	int i, j;
-	
-	for(i=0; i<COL; i++){	// for 80 columns
-		for(j=0; j<db[i]/3; j++){
-			if(db[i]>60 && j>20) setColors(WHITE, bg(YELLOW));
+	int i;
+	for (i=0; i<COL; i++){ // for 80 columns
+		for (int j=0; j<db[i]/3; j++){
+			printf("\033[%d;%dH", 35-j, i+1); // j is row and i is column
+			if (db[i]>60 && j>20) setColors(WHITE, bg(YELLOW));
 			else setColors(RED, bg(YELLOW));
-			printf("\033[%d;%dH", 35-j, i+1);
-#ifdef UNICODE			// conditional compilation
+
+#ifdef UNICODE    // conditional compilation
 			printf("%s", BAR);
 #else
 			printf("%c", '*');
@@ -22,7 +23,7 @@ void barChart(int db[]){
 
 void clearScreen(void){
 	printf("\033[2J");
-	fflush(stdout);		// for remote terminal (such as PUTTY)
+	fflush(stdout);
 }
 
 void setColors(short bg, short fg){
@@ -34,3 +35,8 @@ void resetColors(void){
 	printf("\033[0m");
 	fflush(stdout);
 }
+/*
+int count(int db[]){
+	int count=0;
+	for (i=0; i<COL; i++){
+}*/
