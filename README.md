@@ -22,15 +22,16 @@ device. The application comes with 2 functions: a sound collector and a test ton
   * 1.2. Configure USB sound as a default audio device
      * 1.RPi onboard sound card does not have microphone interface, so we need to change the default audio device to USB sound card
      * 2.Boot up RPi, and apply the USB sound card. Use "lsusb" command to check if your USB sound card is mounted:
-```
+        ```
         pi@raspberrypi:~ $ lsusb
         Bus 001 Device 004: ID 0d8c:000c C-Media Electronics, Inc. Audio Adapter
         Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
         Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp.
         Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+        ```
 
      * 3.Use "sudo nano /etc/asound.conf" command and put following content to the file:
-```
+        ```
         pcm.!default {
           type plug
           slave {
@@ -41,7 +42,7 @@ device. The application comes with 2 functions: a sound collector and a test ton
             type hw
             card 1
         }
-```
+        ```
      * 4.Go to your home directory. Use "nano .asoundrc" command and put the same content to the file.
      * 5.Run "alsamixer" you should be able to see that USB sound card is the default audio device. For a more sensitive sound detection, it is better to maximize the volume of "Mic".
   * 1.3. Install Libcurl library
