@@ -85,4 +85,4 @@ device. The application comes with 2 functions: a sound collector and a test ton
   * Mr. Gao Chao- the instructor.
 
 ## NOTE:
-   Because I had some problems in setting USB sound card as Default, so I had to reomved all file in my SD card and installed it again.    
+   During the course I had some problems in setting USB sound card as Default, I had to reomved all file in my SD card and installed Raspberry Pi again. Because of that, you will see the date I commit code are different to the others students in class, it does not follow your instruction in this course. I am so sorry about that.
