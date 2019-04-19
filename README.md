@@ -1,9 +1,9 @@
-# This is application development  ----- by Huy Nguyen
+## This is application development  ----- by Huy Nguyen
 
 *This application offers a possibility to turn a Raspherry Pi as a sound
 device. The application comes with 2 functions: a sound collector and a test tone generator.
 
-# List of Content
+## List of Content
    1. Congfiguration Instruction
    2. Installation Instruction
    3. Operating Instructions
@@ -51,17 +51,17 @@ device. The application comes with 2 functions: a sound collector and a test ton
      * 3.Run "sudo apt-get install libcurl3" to install the libcurl3.
      * 4.Run "sudo apt-get install libcurl4-openssl-dev" to install the development API of libcurl4
 
-#2. Installation Instruction
+## 2. Installation Instruction
   * In your installation directory, use "make" command to create executable file, which is file "sound.out"
   * Now sound.out should be in the same directory
 
-#3. Operating Instructions
+## 3. Operating Instructions
   * Use command "/.sound.out" without argument to see a decibel barchart of captured sound throught microphone
   * Press "Ctrl"+"c" to stop program
   * Use command "/.sound.out arg" to generate a testTone.wav  and put specified options
   * Use command "make clean" to delete all the executable file.
 
-#4. List of files
+## 4. List of files
   * README.md : contains short infomation of this application and how to use it
   * comm.c and comm.h: connect to the server and send the data to server
   * main.c: contains the functions which is used for readind the input and open "test.wav" file, call fuctions to display barchart
@@ -71,16 +71,16 @@ device. The application comes with 2 functions: a sound collector and a test ton
   * sound.php: this php file recieves the data from appllication and write all the data in a text file.
   * testcurl.c: contains the fucntions which test the curl library by sending some infomation to server
 
-#5. Copyright / Copyleft
+## 5. Copyright / Copyleft
   * Coppyright 2019: All the source code were written  by Huy Nguyen
   * Coppyleft 2019: This application is done under the instruction of Mr. Gao Chao (teacher in Vaasa University of applied sciences)
 
-#6. Contact Infomation 
+## 6. Contact Infomation 
   * Name:  Huy Nguyen
   * Email: ng.huy0708@gmail.com
   * Phone number: 046 547 1125
 
-#7. Credits and Acknowledgements
+## 7. Credits and Acknowledgements
   * Huy Nguyen- application developer
   * Mr. Gao Chao- the instructor.
 
