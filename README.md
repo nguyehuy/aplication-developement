@@ -1,9 +1,9 @@
 ## This is application development  ----- by Huy Nguyen
 
-*This application offers a possibility to turn a Raspherry Pi as a sound
+* This application offers a possibility to turn a Raspherry Pi as a sound
 device. The application comes with 2 functions: a sound collector and a test tone generator.
 
-## List of Content
+# List of Content
    1. Congfiguration Instruction
    2. Installation Instruction
    3. Operating Instructions
