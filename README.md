@@ -64,10 +64,10 @@ device. The application comes with 2 functions: a sound collector and a test ton
 ## 4. List of files
   * README.md : contains short infomation of this application and how to use it
   * comm.c and comm.h: connect to the server and send the data to server
-  * main.c: contains the functions which is used for readind the input and open "test.wav" file, call fuctions to display barchart
+  * main.c: contains the functions which is used for reading the input and open "test.wav" file, call fuctions to display barchart
   * makefile: to generate some simple command to run and clean the apllication
   * screen.c and screen.h: contains the fuctions which generates the bartchart and set its color
-  * sound.c and sound.h:  cotains the fuctions use for processing the sound recieved ( such as calculating pieces and peak of wave ) and generate the tone.
+  * sound.c and sound.h:  cotains the fuctions used for processing the sound recieved ( such as calculating pieces and peak of wave ) and generate the tone.
   * sound.php: this php file recieves the data from appllication and write all the data in a text file.
   * testcurl.c: contains the fucntions which test the curl library by sending some infomation to server
 
