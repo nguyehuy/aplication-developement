@@ -13,7 +13,7 @@ device. The application comes with 2 functions: a sound collector and a test ton
    7.Credits and Acknowlegements
 
 
-#1. Configuration Instruction
+# 1. Configuration Instruction
   * 1.1 All the devices needed
      16GB microSD card 
      Raspherry Pi
