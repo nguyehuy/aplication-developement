@@ -28,7 +28,7 @@ device. The application comes with 2 functions: a sound collector and a test ton
         Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
         Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp.
         Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
-```
+
      * 3.Use "sudo nano /etc/asound.conf" command and put following content to the file:
 ```
         pcm.!default {
